@@ -1,0 +1,14 @@
+INSTRUCTION:
+Determine if the NEW EVENT is redundant with the CURRENT STATE OF MEMORY by following closely these steps. Explain each of the steps:
+
+CONTEXT:
+NEW EVENT: User likes apples
+CURRENT STATE OF MEMORY: {{memory}}
+
+RESPONSE:
+STEP 1: Compare the content of NEW EVENT and CURRENT STATE OF MEMORY.
+What are the differences, explain in a step by step way: {{gen 'step1' stop='\n'}}
+What are the similarities, explain in a step by step way: {{gen 'step2' stop='\n'}}
+
+STEP 3: Format the answer in this structure: isRedundant=True/False
+isRedundant={{gen 'response' stop='\n'}}
