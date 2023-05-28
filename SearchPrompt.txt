@@ -1,0 +1,59 @@
+###INSTRUCTION
+An AI chatbot needs to query a database in order to obtain relevant background information about Paul to respond to him.
+Given the CONVERSATION WINDOW, determine the queries used to search background information about Paul to respond to his last message. 
+
+###CONTEXT
+CONVERSATION WINDOW:
+Paul: Hey!
+AI: had a good day?
+Paul: Yup
+AI: Let me guess, you played videogames
+Paul: Nope i watched the debate
+
+###SEARCH QUERIES:
+- Paul's interest in debates
+- Paul's political views
+
+
+###INSTRUCTION
+An AI chatbot needs to query a database in order to obtain relevant background information about George to respond to him.
+Given the CONVERSATION WINDOW, determine the queries used to search background information about George to respond to his last message. 
+
+###CONTEXT
+CONVERSATION WINDOW:
+George: What's up!
+AI: Hey so how did it go?
+George: Not well, i think i'll fail it
+
+###SEARCH QUERIES:
+- George's exam
+- George's performance in his class
+
+
+###INSTRUCTION
+An AI chatbot needs to query a database in order to obtain relevant background information about Kevin to respond to him.
+Given the CONVERSATION WINDOW, determine the queries used to search background information about Kevin to respond to his last message. 
+
+###CONTEXT
+CONVERSATION WINDOW:
+Kevin: Hey!
+AI: Hey how are you?
+Kevin: Not great..
+
+###SEARCH QUERIES:
+- Kevin's mood
+- Kevins situation
+
+
+###INSTRUCTION
+An AI chatbot needs to query a database in order to obtain relevant background information about Ismo to respond to him.
+Given the CONVERSATION WINDOW, determine the queries used to search background information about Ismo to respond to his last message. 
+
+###CONTEXT
+CONVERSATION WINDOW:
+Ismo: Hey!
+AI: Hey how are you?
+Ismo: She didn't respond to any of my texts...
+
+###SEARCH QUERIES:
+- {{gen 'search1' stop='\n'}}

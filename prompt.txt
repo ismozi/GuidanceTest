@@ -1,21 +1,8 @@
-###CONTEXT:
-CONVERSATION WINDOW:
-George: Hey!
-AI: Hey how are you?
-George: Great, it was a good day!
-AI: Oh yea? What did you do?
-George: I listened to music
+###INSTRUCTION
+An AI chatbot needs to query a database in order to obtain relevant background information about Paul to respond to him.
+Given the CONVERSATION WINDOW, determine the query used to retrieved background information about Paul to respond to his last message. 
 
-###QUESTION:
-Given the CONVERSATION WINDOW, without assuming anything, determine the background information about George should be used to respond to his last message. 
-
-###ANSWER:
-- George's music preferences
-- George's favorite artist
-
---------------------------------------------------------------------------------------------------------
-
-###CONTEXT:
+###CONTEXT
 CONVERSATION WINDOW:
 Paul: Hey!
 AI: had a good day?
@@ -23,41 +10,45 @@ Paul: Yup
 AI: Let me guess, you played videogames
 Paul: Nope i watched the debate
 
-###INSTRUCTION:
-Given the CONVERSATION WINDOW, without assuming anything, determine the background information about Paul should be used to respond to his last message.
+###QUESTION ABOUT CONTEXT:
+Which debate is Paul talking about and why did he watch it?
 
-###ANSWER:
+###INFORMATION TO QUERY:
+- Paul's interest in debates
 - Paul's political views
-- Paul's interest in politics
 
-----------------------------------------------------------------------------------------------
 
-###CONTEXT:
+###INSTRUCTION
+An AI chatbot needs to query a database in order to obtain relevant background information about George to respond to him.
+Given the CONVERSATION WINDOW, determine the query used to retrieved background information about George to respond to his last message. 
+
+###CONTEXT
 CONVERSATION WINDOW:
-Kevin: Hey
-AI: yooo
-Kevin: How are you
-AI: Good n you?
-Kevin: Im good! Im on a trip rn so its really fun!
+George: What's up!
+AI: Hey so how did it go?
+George: Not well, i think i'll fail it
 
-###INSTRUCTION:
-Given the CONVERSATION WINDOW, without assuming anything, determine the background information about Kevin that should be used to respond to his last message.
+###QUESTION ABOUT CONTEXT:
+What does George think he'll fail?
 
-###ANSWER:
-- Kevin's trip
-- Kevin's interest for travelling
+###INFORMATION TO QUERY:
+- George's exam
+- George's performance in his class
 
----------------------------------------------------------------------------------------------
 
-###CONTEXT:
+###INSTRUCTION
+An AI chatbot needs to query a database in order to obtain relevant background information about Ismo to respond to him.
+Given the CONVERSATION WINDOW, determine the query used to retrieved background information about Ismo to respond to his last message. 
+
+###CONTEXT
 CONVERSATION WINDOW:
-Ismo: What's up!
-AI: Hey so how was it?
-Ismo: It went great! I think i'll pass it
+Ismo: Hey!
+AI: Hey how are you?
+Ismo: Not great:(
 
-###INSTRUCTION:
-Given the CONVERSATION WINDOW, without assuming anything, determine the background information about Ismo that should be used to respond to his last message.
+###QUESTION ABOUT CONTEXT:
+Why is Ismo not doing great?
 
-###ANSWER:
+###INFORMATION TO QUERY:
 - {{gen 'search1' stop='\n'}}
 - {{gen 'search2' stop='\n'}}
