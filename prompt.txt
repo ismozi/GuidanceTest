@@ -1,14 +1,63 @@
-INSTRUCTION:
-Determine if the NEW EVENT is redundant with the CURRENT STATE OF MEMORY by following closely these steps. Explain each of the steps:
+###CONTEXT:
+CONVERSATION WINDOW:
+George: Hey!
+AI: Hey how are you?
+George: Great, it was a good day!
+AI: Oh yea? What did you do?
+George: I listened to music
 
-CONTEXT:
-NEW EVENT: User likes apples
-CURRENT STATE OF MEMORY: {{memory}}
+###QUESTION:
+Given the CONVERSATION WINDOW, without assuming anything, determine the background information about George should be used to respond to his last message. 
 
-RESPONSE:
-STEP 1: Compare the content of NEW EVENT and CURRENT STATE OF MEMORY.
-What are the differences, explain in a step by step way: {{gen 'step1' stop='\n'}}
-What are the similarities, explain in a step by step way: {{gen 'step2' stop='\n'}}
+###ANSWER:
+- George's music preferences
+- George's favorite artist
 
-STEP 3: Format the answer in this structure: isRedundant=True/False
-isRedundant={{gen 'response' stop='\n'}}
+--------------------------------------------------------------------------------------------------------
+
+###CONTEXT:
+CONVERSATION WINDOW:
+Paul: Hey!
+AI: had a good day?
+Paul: Yup
+AI: Let me guess, you played videogames
+Paul: Nope i watched the debate
+
+###INSTRUCTION:
+Given the CONVERSATION WINDOW, without assuming anything, determine the background information about Paul should be used to respond to his last message.
+
+###ANSWER:
+- Paul's political views
+- Paul's interest in politics
+
+----------------------------------------------------------------------------------------------
+
+###CONTEXT:
+CONVERSATION WINDOW:
+Kevin: Hey
+AI: yooo
+Kevin: How are you
+AI: Good n you?
+Kevin: Im good! Im on a trip rn so its really fun!
+
+###INSTRUCTION:
+Given the CONVERSATION WINDOW, without assuming anything, determine the background information about Kevin that should be used to respond to his last message.
+
+###ANSWER:
+- Kevin's trip
+- Kevin's interest for travelling
+
+---------------------------------------------------------------------------------------------
+
+###CONTEXT:
+CONVERSATION WINDOW:
+Ismo: What's up!
+AI: Hey so how was it?
+Ismo: It went great! I think i'll pass it
+
+###INSTRUCTION:
+Given the CONVERSATION WINDOW, without assuming anything, determine the background information about Ismo that should be used to respond to his last message.
+
+###ANSWER:
+- {{gen 'search1' stop='\n'}}
+- {{gen 'search2' stop='\n'}}
