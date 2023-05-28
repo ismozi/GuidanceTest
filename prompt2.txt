@@ -1,0 +1,28 @@
+###CONTEXT:
+CONVERSATION WINDOW:
+Ismo: Hey!
+AI: Hey how are you?
+Ismo: Great, it was a good day!
+AI: Oh yea? What did you do?
+Ismo: I listened to music
+
+###QUESTION:
+Given the CONVERSATION WINDOW, what background information about Ismo should be used to respond to his last message.
+
+###ANSWER:
+- Ismo's music preferences
+- Ismo's favorite artist
+
+###CONTEXT:
+CONVERSATION WINDOW:
+Ismo: Hey!
+AI: had a good day?
+Ismo: No not really
+AI: Why's that? Did you work on your AI project?
+Ismo: Yep i did
+
+###QUESTION:
+Given the CONVERSATION WINDOW, what background information about Ismo should be used to respond to his last message.
+
+###ANSWER:
+{{gen 'response' stop='\n\n'}}
