@@ -1,28 +1,123 @@
-###CONTEXT:
+###INSTRUCTION
+An AI chatbot needs to query a database in order to obtain a notion of chronology of events which will help it respond to the user's last message.
+This database contains past and future events objects, which are characterized by a "date and time" attribute.
+Given the CONVERSATION WINDOW, determine datestime or period to search for in your memory, so that you can have the necessary context to respond to the user's last message.
+
+###CURRENT DATE AND TIME
+Saturday, 2023/05/28, 8:28PM
+
+###CONTEXT
 CONVERSATION WINDOW:
-Ismo: Hey!
-AI: Hey how are you?
-Ismo: Great, it was a good day!
-AI: Oh yea? What did you do?
-Ismo: I listened to music
+Kevin: Hey
+AI: What's up!
+Kevin: How are you
+AI: Good and you?
+Kevin: Im good! So i tomorrow a busy day?
 
-###QUESTION:
-Given the CONVERSATION WINDOW, what background information about Ismo should be used to respond to his last message.
+###TEMPORAL RETRIEVAL
+datetime: 2023/05/29
+period: {
+  from: NONE,
+  to: NONE
+}
 
-###ANSWER:
-- Ismo's music preferences
-- Ismo's favorite artist
+###INSTRUCTION
+An AI chatbot needs to query a database in order to obtain a notion of chronology of events which will help it respond to the user's last message.
+This database contains past and future events objects, which are characterized by a "date and time" attribute.
+Given the CONVERSATION WINDOW, determine datestime or period to search for in your memory, so that you can have the necessary context to respond to the user's last message.
 
-###CONTEXT:
+###CURRENT DATE AND TIME
+Saturday, 2022/02/12, 12:22PM
+
+###CONTEXT
 CONVERSATION WINDOW:
-Ismo: Hey!
-AI: had a good day?
-Ismo: No not really
-AI: Why's that? Did you work on your AI project?
-Ismo: Yep i did
+Dave: Yooo
+AI: Hey Dave how are you?
+Dave: Im great! Excited for the rest of the month!
 
-###QUESTION:
-Given the CONVERSATION WINDOW, what background information about Ismo should be used to respond to his last message.
+###TEMPORAL RETRIEVAL
+datetime: NONE
+period: {
+  from: 2022/02/12
+  to: 2022/02/28
+}
 
-###ANSWER:
-{{gen 'response' stop='\n\n'}}
+###INSTRUCTION
+An AI chatbot needs to query a database in order to obtain a notion of chronology of events which will help it respond to the user's last message.
+This database contains past and future events objects, which are characterized by a "date and time" attribute.
+Given the CONVERSATION WINDOW, determine datestime or period to search for in your memory, so that you can have the necessary context to respond to the user's last message.
+
+###CURRENT DATE AND TIME
+Thursday, 2023/4/20, 4:20PM
+
+###CONTEXT
+CONVERSATION WINDOW:
+Justin: Yooo
+AI: Hey Justin how are you?
+Justin: Im great! Im just relaxing since i have nothing left to do today
+
+###TEMPORAL RETRIEVAL
+datetime: NONE
+period: {
+  from: 2023/4/20, 4:20PM
+  to: 2023/4/20, 11:59PM
+}
+
+###INSTRUCTION
+An AI chatbot needs to query a database in order to obtain a notion of chronology of events which will help it respond to the user's last message.
+This database contains past and future events objects, which are characterized by a "date and time" attribute.
+Given the CONVERSATION WINDOW, determine datestime or period to search for in your memory, so that you can have the necessary context to respond to the user's last message.
+
+###CURRENT DATE AND TIME
+Sunday, 2023/05/29, 8:44PM
+
+###CONTEXT
+CONVERSATION WINDOW:
+Mike: Yooo
+AI: Sup Mike do you need anything?
+Mike: Should i register for tennis courses this summer?
+
+###TEMPORAL RETRIEVAL
+datetime: NONE
+period: {
+  from: 2023/06/21
+  to: 2023/10/23
+}
+
+###INSTRUCTION
+An AI chatbot needs to query a database in order to obtain a notion of chronology of events which will help it respond to the user's last message.
+This database contains past and future events objects, which are characterized by a "date and time" attribute.
+Given the CONVERSATION WINDOW, determine datestime or period to search for in your memory, so that you can have the necessary context to respond to the user's last message.
+
+###CURRENT DATE AND TIME
+Sunday, 2023/05/29, 8:44PM
+
+###CONTEXT
+CONVERSATION WINDOW:
+Paul: Should i book an appointement wednesday?
+
+###TEMPORAL RETRIEVAL
+datetime: 2023/05/31
+period: {
+  from: NONE
+  to: NONE
+}
+
+###INSTRUCTION
+An AI chatbot needs to query a database in order to obtain a notion of chronology of events which will help it respond to the user's last message.
+This database contains past and future events objects, which are characterized by a "date and time" attribute.
+Given the CONVERSATION WINDOW, determine datestime or period to search for in your memory, so that you can have the necessary context to respond to the user's last message.
+
+###CURRENT DATE AND TIME
+Friday, 2023/06/02, 8:44PM
+
+###CONTEXT
+CONVERSATION WINDOW:
+Alex: Should i book an appointement thusrday?
+
+###TEMPORAL RETRIEVAL
+datetime: {{gen stop='\n'}}
+period: {
+  from: {{gen stop='\n'}}
+  to: {{gen stop='\n'}}
+}

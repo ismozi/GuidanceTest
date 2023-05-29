@@ -1,0 +1,85 @@
+###INSTRUCTION
+An AI chatbot needs to query a database in order to obtain a notion of chronology of events which will help it respond to the user's last message.
+This database contains past and future events objects, which are characterized by a "date and time" attribute.
+Given the CONVERSATION WINDOW, determine the specific datetime to search for in your memory, so that you can have the necessary context to respond to the user's last message.
+
+###CURRENT DATE AND TIME
+Saturday, 2023/05/28, 8:28PM
+
+###CONTEXT
+CONVERSATION WINDOW:
+Kevin: Hey
+AI: What's up!
+Kevin: How are you
+AI: Good and you?
+Kevin: Im good! So i tomorrow a busy day?
+
+###RESPONSE
+Specific day to query: Tomorrow
+Specific day in datetime: 2023/05/29
+
+
+###CURRENT DATE AND TIME
+Sunday, 2023/05/29, 8:44PM
+
+###CONTEXT
+CONVERSATION WINDOW:
+Paul: Yea maybe not
+AI: I understand
+Paul: Anyways, should i book an appointement wednesday at 12pm?
+
+###RESPONSE
+Specific day to query: Next wednesday at 12pm
+Specific day in datetime: 2023/05/31, 12:00PM
+
+
+###CURRENT DATE AND TIME
+Friday, 2023/06/02, 8:44PM
+
+###CONTEXT
+CONVERSATION WINDOW:
+Alex: Next week will be hard!
+AI: True! I hope you're ready
+Alex: Ye i think am, thursday will be the hardest i think
+
+###RESPONSE
+Specific day to query: Next thursday
+Specific day in datetime: 2023/06/08
+
+
+###CURRENT DATE AND TIME
+Friday, 2022/09/02, 11:40PM
+
+###CONTEXT
+CONVERSATION WINDOW:
+Steven: Should i book an appointement next month?
+
+###RESPONSE
+Specific day to query: NONE
+Specific day in datetime: NONE
+
+
+###CURRENT DATE AND TIME
+Friday, 2022/10/14, 9:27AM
+
+###CONTEXT
+CONVERSATION WINDOW:
+Jean: Should i book a trip to hawaii on the friday in two weeks?
+
+###RESPONSE
+Specific day to query: Friday in two weeks
+Specific day in datetime: 2022/10/28
+
+
+###CURRENT DATE AND TIME
+Sunday, 2022/05/08, 8:44PM
+
+###CONTEXT
+CONVERSATION WINDOW:
+Ismo: Yea but im not sure it's worth it, 
+AI: Why's that?
+Ismo: Idk i feel like it will be a bit to packed tonight
+
+###RESPONSE
+Specific day to query: {{gen stop='\n'}}
+Specific day in datetime: {{gen stop='\n'}}

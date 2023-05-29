@@ -1,0 +1,44 @@
+###INSTRUCTION
+An AI chatbot needs to query a database in order to obtain a notion of chronology of events which will help it respond to the user's last message.
+This database contains past and future events objects, which are characterized by an "event descripton".
+Given the CONVERSATION WINDOWs, determine the event descriptons to search for. 
+
+###CONTEXT
+CONVERSATION WINDOW:
+Kevin: Hey
+AI: What's up!
+Kevin: How are you
+AI: Good and you?
+Kevin: Im good! Just came back from the party, it was fun!
+
+###EVENT DESCRIPTION
+- Kevin's party
+
+###CONTEXT
+CONVERSATION WINDOW:
+Paul: Yeee I'm so happy
+AI: Hell yeah!
+Paul: Btw can you remind me when's my appointement at the doctor again?
+
+###EVENT DESCRIPTION
+- Paul's doctor's appointement
+
+###CONTEXT
+CONVERSATION WINDOW:
+Steven: I know but still it rocks!
+AI: Yep for sureee, davyboi is a great musician
+Steven: Yepp and his birthday is soon right?
+
+###EVENT DESCRIPTION
+- Davyboi's birthday
+
+###CONTEXT
+CONVERSATION WINDOW:
+Ismo: I'm not sure about that thoo
+AI: Hmm pretty sure
+Ismo: Ok ye it might be true then
+AI: Anyways, what did you do tonight 
+Ismo: Bro you don't remember, the concert???
+
+###EVENT DESCRIPTION
+- {{gen stop='\n'}}
